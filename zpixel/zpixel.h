@@ -1,7 +1,7 @@
 #ifndef _ZPIXEL_H
 #define _ZPIXEL_H
 #include <stdint.h>
-#include "./image/image.h"
+#include "../image/image.h"
 
 typedef struct{
     int size;

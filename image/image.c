@@ -85,7 +85,7 @@ int getPixels(image * im, int i, int j, uint8_t * r, uint8_t * g, uint8_t * b){
 /// @param valb la nouvelle valeur b du pixel
 /// @return 1 si le pixel à été modifié, 0 sinon
 int setPixels(image * im,int i, int j , uint8_t valr , uint8_t valg ,uint8_t valb){
-    if (i>=0 && i<im->hauteur && j>=0 && j<im->largeur) {
+    if (i >= 0 && i < im->hauteur && j >= 0 && j < im->largeur) {
         *(im->pixels+i*im->rowstride + 3*j) = valr;
         *(im->pixels+i*im->rowstride + 3*j+1) = valg;
         *(im->pixels+i*im->rowstride + 3*j+2) = valb;
